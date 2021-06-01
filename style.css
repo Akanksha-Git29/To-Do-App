@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 12vh;
+    background-color: rgb(38, 134, 179);
+    display: flex;
+}
+
+.ticket-container{
+    height: 88vh;
+    background-color: rgb(212, 210, 204);
+    position: relative;
+    padding: 1% ;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: auto ;
+}
+
+.filter-container,
+.add-delete-container{
+    height: 8vh;
+    margin-top: 2vh;
+    margin-left: 8vw;
+    border-radius: 3px;
+    background-color: palevioletred;
+}
+
+.filter-container{
+    width: 18vw;
+    display: flex;
+}
+
+.add-delete-container{
+    width: 9vw;
+    display: flex;
+}
+
+.filter{
+    height: 100%;
+    width: 25%;
+    /* display: flex; */
+}
+
+.black-color-button,
+.yellow-color-button,
+.green-color-button,
+.orange-color-button{
+    display: block;
+    width: 40%;
+    height: 40%;
+    /* margin-left: 30%; */
+    border-radius: 3px;
+    margin-top: calc(8vh * 0.3);
+    margin-bottom: calc(8vh * 0.3);
+    margin-right: calc(4.5vw * 0.3);
+    margin-left: calc(4.5vw * 0.3);
+}
+
+.black-color-button, .modal-black-filter, .tickets-color-black{
+    background-color: rgb(43, 36, 36);
+}
+
+.green-color-button, .modal-green-filter, .tickets-color-green{
+    background-color: green;
+}
+
+.orange-color-button, .modal-orange-filter, .tickets-color-orange{
+    background-color: orange;
+}
+
+.yellow-color-button, .modal-yellow-filter, .tickets-color-yellow{
+    background-color: yellow;
+}
+
+.filter:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.filter.active{
+    background-color: white;
+}
+
+.add,.delete{
+    height: 100%;
+    width: 50%;
+    /* display: flex; */
+}
+
+.action-btn{
+    display: block;
+    height: 40%;
+    width: 40%;
+    margin-top: calc(8vh * 0.3);
+    margin-bottom: calc(8vh * 0.3);
+    margin-right: calc(4.5vw * 0.3);
+    margin-left: calc(4.5vw * 0.3);
+    background-color: white;
+    padding-left: 3%;
+}
+
+.add:hover, .delete:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.modal{
+    box-shadow: 10px 10px 50px 5px grey;  
+    /* horiontal vertical blur radius */ 
+    height: 18rem;
+    width: 35rem;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    top: 7rem;
+    left: calc((100vw - 35rem)/2);
+}
+
+.task-to-be-added{
+    width: 70%;
+    height: 100%;
+    padding: 3rem;
+    outline: none;
+    overflow: auto;
+}
+
+.modal-priority-list{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: rgb(107, 80, 131);
+}
+
+.modal-filters{
+    width: 100%;
+    height: 20%;
+}
+
+.modal-filters:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.modal-filters.active{
+    border: 5px solid;
+}
+
+.tickets {
+    height: 9rem;
+    width: 16rem;
+    background-color: rgb(247, 241, 229);
+    margin: 0 auto 0 auto;
+    margin-bottom: 10px;
+}
+
+.tickets-color{
+    height: 6%;
+    width: 100%;
+    /* padding: 3%; */
+    
+}
+
+.tickets-id{
+    height: 15%;
+    width: 100%;
+    padding: 3%;
+    color: grey;
+}
+
+.task{
+    height: 79%;
+    width: 100%;
+    padding: 3%;
+}
+
+.tickets.active{
+    box-shadow: 0 0 3px 1px;
+}
